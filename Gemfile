@@ -11,6 +11,7 @@ gem 'bootstrap-sass', '2.3.2.0'
 # gem 'sqlite3', '1.3.8'
 
 gem "rb-readline", "~> 0.4.2"
+gem 'bcrypt-ruby', '3.1.2'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
