@@ -10,6 +10,7 @@ gem 'bootstrap-sass', '2.3.2.0'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3', '1.3.8'
 
+# downgrade readline gem to allow rails console to work
 gem "rb-readline", "~> 0.4.2"
 gem 'bcrypt-ruby', '3.1.2'
 
@@ -45,8 +46,9 @@ group :development, :test do
 end
 
 group :test do
+	gem 'factory_girl_rails', '4.2.1' # easy way to define user objects and insert them into the database. 
 	gem 'selenium-webdriver', '2.35.1'
-	gem 'capybara', '2.1.0' # for writting english like tests on the code 
+	gem 'capybara', '2.1.0' # for writing english like tests on the code 
 end
 
 group :production do
